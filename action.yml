@@ -61,6 +61,14 @@ inputs:
 outputs:
   aws-account-id:
     description: 'The AWS account ID for the provided credentials'
+  aws-access-key-id:
+    description: AWS access key associated with the IAM user or role
+  aws-secret-access-key:
+    description: Specifies the secret key associated with the access key. 
+  aws-session-token:
+    description: Specifies the session token value that is required if you are using temporary security credentials.
+  aws-region:
+    description: Specifies the AWS Region to send requests to
 runs:
   using: 'node16'
   main: 'dist/index.js'
